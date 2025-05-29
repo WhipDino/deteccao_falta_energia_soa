@@ -3,6 +3,8 @@
 ## Juliana Maita -> RM: 99224 
 ## Luana Cabezaolias -> RM: 99320 
 
+---
+
 # Sistema de Alerta de Risco de Apagão
 
 ## Visão Geral
