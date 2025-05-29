@@ -1,3 +1,8 @@
+# Turma 3ESR (Integrantes):
+## João Victor -> RM: 550453
+## Juliana Maita -> RM: 99224 
+## Luana Cabezaolias -> RM: 99320 
+
 # Sistema de Alerta de Risco de Apagão
 
 ## Visão Geral
@@ -95,10 +100,10 @@ com.meuprojeto.alertaapagao
 
 ## Exemplos de Alertas Gerados
 
-# Nenhum risco foi detectado:
+### Nenhum risco foi detectado:
 ![Imagem do WhatsApp de 2025-05-29 à(s) 16 22 50_58300b01](https://github.com/user-attachments/assets/cec255f5-8b41-481b-9fe7-3dfd19448b07)
 
-# Alteramos a sensibilidade dos sensores para detectar risco em Recife:
+### Alteramos a sensibilidade dos sensores para detectar risco em Recife:
 ![Imagem do WhatsApp de 2025-05-29 à(s) 16 25 14_a1c8bd00](https://github.com/user-attachments/assets/bb9a3a91-ac1c-4992-b30a-31911de769fb)
 
 
