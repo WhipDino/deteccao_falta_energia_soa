@@ -2,7 +2,7 @@
 
 ## 1. Visão Geral
 
-O sistema será desenvolvido em Java, seguindo uma arquitetura modular e em camadas para garantir manutenibilidade, escalabilidade e clareza, conforme solicitado.
+O sistema foi desenvolvido em Java, seguindo uma arquitetura modular e em camadas para garantir manutenibilidade, escalabilidade e clareza, conforme solicitado.
 
 A estrutura principal se baseará em um padrão semelhante ao MVC (Model-View-Controller), adaptado para uma aplicação de backend que consome uma API externa e gera logs no console:
 
