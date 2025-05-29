@@ -113,6 +113,41 @@ com.meuprojeto.alertaapagao
 
 ---
 
+## Como Rodar o Projeto
+
+Siga as etapas abaixo para executar o sistema localmente:
+
+1. **Pré-requisitos**
+   
+   - Certifique-se de ter o **Java 17** (ou superior) e o **Maven** instalados na sua máquina.
+
+2. **Download e Extração**
+   
+   - Baixe o projeto (arquivo `.zip`) e extraia o conteúdo para uma pasta de sua preferência.
+
+3. **Acesse o Diretório do Projeto**
+   
+   - Abra o terminal e navegue até a pasta onde você extraiu o projeto (a pasta que contém o arquivo `pom.xml`).
+
+4. **Compilação**
+   
+   - Execute o comando abaixo para baixar as dependências e compilar o projeto:
+     ```bash
+     mvn clean package
+     ```
+   - Esse comando irá criar um arquivo `.jar` executável dentro da pasta `target`.
+
+5. **Execução**
+   
+   - Ainda no terminal, navegue até a pasta `target` e execute o comando:
+     ```bash
+     java -jar alerta-apagao-1.0-SNAPSHOT-jar-with-dependencies.jar
+     ```
+
+Pronto! O sistema irá iniciar e os alertas serão exibidos diretamente no console.
+
+
+---
 ## Exemplos de Alertas Gerados
 
 ### Nenhum risco foi detectado:
