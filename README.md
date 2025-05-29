@@ -81,6 +81,19 @@ com.meuprojeto.alertaapagao
 
 ---
 
+## Lógica de Análise de Risco (`RiscoAnaliseService`)
+
+*   **Escolha:** Basear a análise em:
+    *   Códigos de condição da OpenWeatherMap (ex: códigos para tempestade, chuva extrema).
+    *   Limiares (valores limite) para velocidade do vento, rajadas e volume de chuva (mm/h).
+*   **Por quê?** Tentamos cobrir os cenários mais óbvios que podem levar à falta de energia, conforme a documentação da própria API e o bom senso:
+    *   **Tempestades elétricas (raios):** Risco claro.
+    *   **Ventos muito fortes ou rajadas:** Podem derrubar postes e árvores.
+    *   **Chuvas torrenciais:** Podem causar inundações e danos.
+    *   **Outros eventos extremos:** Como tornados (raros, mas críticos) ou chuva congelante.
+*   **Flexibilidade:** Os valores limite (limiares) estão definidos no código (`RiscoAnaliseService`) e podem ser ajustados se a experiência mostrar que precisam ser mais ou menos sensíveis.
+
+---
 ## Fluxo de Funcionamento
 
 1. **O programa inicia** e define uma lista de cidades para monitorar.
