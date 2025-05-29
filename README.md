@@ -1,0 +1,1 @@
+# deteccao_falta_energia_soa
