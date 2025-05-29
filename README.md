@@ -1,7 +1,8 @@
 # Turma 3ESR (Integrantes):
-## João Victor -> RM: 550453
-## Juliana Maita -> RM: 99224 
-## Luana Cabezaolias -> RM: 99320 
+
+### João Victor -> RM: 550453
+### Juliana Maita -> RM: 99224 
+### Luana Cabezaolias -> RM: 99320 
 
 ---
 
