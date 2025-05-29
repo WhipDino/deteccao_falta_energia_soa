@@ -1,0 +1,15 @@
+com\meuprojeto\alertaapagao\controller\AlertaController.class
+com\meuprojeto\alertaapagao\model\Wind.class
+com\meuprojeto\alertaapagao\model\ClimaInfo.class
+com\meuprojeto\alertaapagao\model\MainData.class
+com\meuprojeto\alertaapagao\Main.class
+com\meuprojeto\alertaapagao\model\Rain.class
+com\meuprojeto\alertaapagao\model\Coord.class
+com\meuprojeto\alertaapagao\model\ClimaInfo$Sys.class
+com\meuprojeto\alertaapagao\util\Configuracao.class
+com\meuprojeto\alertaapagao\service\RiscoAnaliseService.class
+com\meuprojeto\alertaapagao\client\OpenWeatherMapClient.class
+com\meuprojeto\alertaapagao\model\Weather.class
+com\meuprojeto\alertaapagao\service\ClimaConsultaService.class
+com\meuprojeto\alertaapagao\service\AlertaEnvioService.class
+com\meuprojeto\alertaapagao\model\Clouds.class

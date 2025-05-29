@@ -1,0 +1,14 @@
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\model\Weather.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\service\RiscoAnaliseService.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\service\ClimaConsultaService.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\client\OpenWeatherMapClient.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\Main.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\model\Rain.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\model\Coord.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\model\Wind.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\service\AlertaEnvioService.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\controller\AlertaController.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\util\Configuracao.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\model\Clouds.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\model\MainData.java
+D:\home\ubuntu\alerta-apagao\src\main\java\com\meuprojeto\alertaapagao\model\ClimaInfo.java
