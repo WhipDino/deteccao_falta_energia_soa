@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MainData {
     @JsonProperty("temp")
-    private double temp; // Temperatura (em Kelvin por padrão, pode precisar converter)
+    private double temp; // Temperatura Kelvin
     @JsonProperty("feels_like")
     private double feelsLike;
     @JsonProperty("temp_min")
