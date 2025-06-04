@@ -15,8 +15,6 @@ import java.util.stream.Collectors;
  */
 public class RiscoAnaliseService {
 
-    // Limiares para definição de risco (podem ser externalizados ou ajustados)
-    // Valores baseados em classificações comuns, mas podem variar regionalmente.
     private static final double LIMIAR_VENTO_FORTE_KMH = 50.0; // km/h (Ventos fortes)
     private static final double LIMIAR_RAJADA_FORTE_KMH = 70.0; // km/h (Rajadas perigosas)
     private static final double LIMIAR_CHUVA_INTENSA_MMH = 10.0; // mm/h (Chuva forte)
@@ -43,11 +41,11 @@ public class RiscoAnaliseService {
                 int conditionId = weather.getId();
                 String description = weather.getDescription();
 
-                // 2xx: Tempestade Elétrica (Thunderstorm)
+                // 2xx: Tempestade Elétrica
                 if (conditionId >= 200 && conditionId < 300) {
                     riscos.add("Risco Alto: Tempestade Elétrica detectada (" + description + "). Possibilidade de raios e ventos fortes.");
                 }
-                // 5xx: Chuva (Rain) - Foco em intensidades altas
+                // 5xx: Chuva - Foco em intensidades altas
                 else if (conditionId == 502) { // heavy intensity rain
                     riscos.add("Risco: Chuva de intensidade forte detectada (" + description + ").");
                 } else if (conditionId == 503) { // very heavy rain
@@ -59,13 +57,13 @@ public class RiscoAnaliseService {
                 } else if (conditionId == 522 || conditionId == 531) { // heavy intensity shower rain / ragged shower rain
                      riscos.add("Risco Alto: Aguaceiros intensos detectados (" + description + ").");
                 }
-                // 6xx: Neve (Snow) - Pode causar problemas em algumas regiões do Brasil
+                // 6xx: Neve - Pode causar problemas em algumas regiões do Brasil
                 else if (conditionId >= 600 && conditionId < 700) {
                     if (conditionId == 602 || conditionId == 622) { // Heavy snow / Heavy shower snow
                         riscos.add("Risco Alto: Neve intensa detectada (" + description + "). Pode afetar redes elétricas.");
                     }
                 }
-                // 7xx: Atmosfera (Atmosphere) - Foco em Squalls, Tornado
+                // 7xx: Atmosfera 
                 else if (conditionId == 771) { // Squalls
                     riscos.add("Risco Alto: Rajadas de vento súbitas (Squalls) detectadas (" + description + ").");
                 } else if (conditionId == 781) { // Tornado
