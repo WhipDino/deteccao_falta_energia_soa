@@ -23,8 +23,6 @@ public class AlertaEnvioService {
     public void enviarAlertaConsole(ClimaInfo climaInfo, List<String> riscos) {
         if (riscos == null || riscos.isEmpty()) {
             // Nenhum risco detectado, não envia alerta
-            // Poderia logar uma mensagem informativa aqui se desejado
-            // System.out.println("[" + climaInfo.getName() + "] Nenhuma condição de risco detectada.");
             return;
         }
 
