@@ -19,7 +19,6 @@ public class Main {
         System.out.println("Iniciando Sistema de Alerta de Risco de Apagão...");
 
         // --- Injeção de Dependências (Simples) ---
-        // Em uma aplicação maior, usaríamos um framework de injeção (Spring, Guice)
         OpenWeatherMapClient apiClient = new OpenWeatherMapClient();
         ClimaConsultaService climaConsultaService = new ClimaConsultaService(apiClient);
         RiscoAnaliseService riscoAnaliseService = new RiscoAnaliseService();
@@ -27,8 +26,6 @@ public class Main {
         AlertaController alertaController = new AlertaController(climaConsultaService, riscoAnaliseService, alertaEnvioService);
 
         // --- Lista de Cidades para Monitorar (Representativas do Brasil) ---
-        // A API pode ter limites, então usamos uma lista gerenciável.
-        // Adicionar ",BR" para especificar o país e evitar ambiguidades.
         List<String> cidadesParaMonitorar = Arrays.asList(
                 "Sao Paulo,BR",
                 "Rio de Janeiro,BR",
@@ -40,13 +37,12 @@ public class Main {
                 "Manaus,BR",
                 "Recife,BR",
                 "Porto Alegre,BR"
-                // Adicione mais cidades se necessário e permitido pela API
         );
 
         // --- Executar Verificação para Cada Cidade ---
         for (String cidade : cidadesParaMonitorar) {
             alertaController.verificarEAlertarPorCidade(cidade);
-            // Pausa opcional entre requisições para não sobrecarregar a API
+            // Pausa entre requisições para não sobrecarregar a API
             try {
                 Thread.sleep(1000); // Pausa de 1 segundo
             } catch (InterruptedException e) {
