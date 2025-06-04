@@ -11,7 +11,7 @@ public class Coord {
     @JsonProperty("lat")
     private double lat;
 
-    // Getters e Setters (ou tornar público se preferir)
+    // Getters e Setters 
     public double getLon() { return lon; }
     public void setLon(double lon) { this.lon = lon; }
     public double getLat() { return lat; }
